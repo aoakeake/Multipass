@@ -20,6 +20,7 @@ package ru.nukkit.multipass.permissions;
 
 import cn.nukkit.Player;
 import cn.nukkit.Server;
+import ru.nukkit.multipass.MultipassPlugin;
 import ru.nukkit.multipass.data.Providers;
 import ru.nukkit.multipass.event.PermissionsUpdateEvent;
 import ru.nukkit.multipass.util.Message;
@@ -260,7 +261,7 @@ public class Users {
     public static void recalculatePermissions(String userName) {
         Users.getUser(userName).whenComplete((user, e) -> {
             if (e == null) {
-                Server.getInstance().getScheduler().scheduleTask(user::recalculatePermissions);
+                Server.getInstance().getScheduler().scheduleTask(MultipassPlugin.getPlugin(), user::recalculatePermissions);
             }
         });
     }

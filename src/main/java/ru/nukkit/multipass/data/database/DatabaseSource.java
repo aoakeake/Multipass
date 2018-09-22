@@ -186,7 +186,7 @@ public class DatabaseSource extends DataProvider {
         Long rescanTime = TimeUtil.parseTime(MultipassPlugin.getCfg().multiServerRecheck);
         if (rescanTime <= 0) return null;
         int delay = Math.max(TimeUtil.timeToTicks(rescanTime).intValue(), 20);
-        return Server.getInstance().getScheduler().scheduleDelayedRepeatingTask(() -> {
+        return Server.getInstance().getScheduler().scheduleDelayedRepeatingTask(MultipassPlugin.getPlugin(), () -> {
             Collection<Group> groups = null;
             List<User> users = new ArrayList<>();
             groups = loadGroups();
@@ -594,5 +594,4 @@ public class DatabaseSource extends DataProvider {
             con.commit();
         }
     }
-
 }

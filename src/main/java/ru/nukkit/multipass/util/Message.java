@@ -263,7 +263,7 @@ public enum Message {
         final String message = getText(s);
         if (player == null) sender.sendMessage(message);
         else for (int i = 0; i < seconds; i++)
-            Server.getInstance().getScheduler().scheduleDelayedTask(new Runnable() {
+            Server.getInstance().getScheduler().scheduleDelayedTask(MultipassPlugin.getPlugin(), new Runnable() {
                 @SuppressWarnings("deprecation")
                 public void run() {
                     if (player.isOnline()) player.sendTip(message);
@@ -518,5 +518,4 @@ public enum Message {
     public static String color2(String message) {
         return TextFormat.colorize("&" + c2 + message);
     }
-
 }

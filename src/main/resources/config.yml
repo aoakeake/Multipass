@@ -1,11 +1,13 @@
 # Multipass, Nukkit permission system
-#
 general:
 # Messages language. Supported languages:
-# eng - English,
-# rus - Russian,
-# tur - Turkish.
-# You can help translate plugin: https://crowdin.com/project/multipass/invite
+# eng - English
+# rus - Russian
+# tur - Turkish
+# esp - Spanish
+# fra - French
+# jap - Japanese
+# kor - Korean
   language: default
 # Save translation file
   language-save: false
@@ -32,7 +34,7 @@ permissions:
 storage:
 # Database type:
 # - YAML - yaml files
-# - DATABASE - MySQL or SQLite. DbLib plugins is required: http://nukkit.ru/resources/dblib.14/
+# - DATABASE - MySQL or SQLite. DbLib plugins is required: https://nukkitx.com/resources/dblib.12/
   type: YAML
 # Auto-update interval (for multi-server system). If this values is not equal to '0'
 # groups and permissions will be automatically updated.

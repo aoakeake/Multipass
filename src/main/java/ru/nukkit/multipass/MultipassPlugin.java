@@ -56,5 +56,4 @@ public class MultipassPlugin extends PluginBase {
         this.saveDefaultConfig();
         this.saveResource("groups.yml", false);
     }
-
 }

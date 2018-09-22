@@ -49,5 +49,4 @@ public class WorldParam {
     public Message message(Message msg, Message worldMsg) {
         return world.isEmpty() ? msg : worldMsg;
     }
-
 }

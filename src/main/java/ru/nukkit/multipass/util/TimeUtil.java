@@ -8,11 +8,11 @@ public class TimeUtil {
     }
 
     public static Long parseTime(String time) {
-        int hh = 0; // часы
-        int mm = 0; // минуты
-        int ss = 0; // секунды
-        int tt = 0; // тики
-        int ms = 0; // миллисекунды
+        int hh = 0;
+        int mm = 0;
+        int ss = 0;
+        int tt = 0;
+        int ms = 0;
         if (time.matches("\\d+")) {
             ss = Integer.parseInt(time);
         } else if (time.matches("^[0-5][0-9]:[0-5][0-9]$")) {

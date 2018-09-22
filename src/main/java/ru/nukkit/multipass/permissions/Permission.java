@@ -18,14 +18,10 @@
 
 package ru.nukkit.multipass.permissions;
 
-import java.util.Collection;
-
 public class Permission {
 
     private final String name;
     private final boolean positive;
-    private Collection<? extends Permission> permissions;
-
 
     public Permission(String name, boolean positive) {
         this.name = name;
@@ -62,6 +58,4 @@ public class Permission {
     public int hashCode() {
         return name != null ? name.hashCode() : 0;
     }
-
-
 }

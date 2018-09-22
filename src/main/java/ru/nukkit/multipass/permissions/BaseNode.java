@@ -298,6 +298,4 @@ public abstract class BaseNode extends Node {
         }
         return sb.append("]").toString();
     }
-
-
 }

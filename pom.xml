@@ -6,13 +6,17 @@
 
     <groupId>ru.nukkit.multipass</groupId>
     <artifactId>Multipass</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <repositories>
+        <repository>
+            <id>nukkitx</id>
+            <url>https://repo.nukkitx.com/main/</url>
+        </repository>
         <repository>
             <id>nukkit-ru</id>
             <url>http://repo.nukkit.ru</url>
@@ -43,5 +47,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

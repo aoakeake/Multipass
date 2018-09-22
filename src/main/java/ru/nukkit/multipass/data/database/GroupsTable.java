@@ -25,5 +25,4 @@ public class GroupsTable {
     String world;
 
     String subgroup;
-
 }

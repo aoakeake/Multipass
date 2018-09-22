@@ -19,7 +19,6 @@
 package ru.nukkit.multipass.command.user;
 
 import cn.nukkit.Player;
-import cn.nukkit.Server;
 import cn.nukkit.command.CommandSender;
 import ru.nukkit.multipass.Multipass;
 import ru.nukkit.multipass.command.Cmd;
@@ -43,7 +42,6 @@ public class UserInfo extends Cmd {
                 e.printStackTrace();
             } else {
                 if (register) {
-                    boolean online = Server.getInstance().getPlayerExact(userName) != null;
                     int page = args.length == 3 && args[2].matches("\\d+") ? Integer.parseInt(args[2]) : 1;
                     Users.getUser(userName).whenComplete((user, e2) -> {
                         if (e2 != null) {

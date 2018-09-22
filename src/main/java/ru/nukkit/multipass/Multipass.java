@@ -54,7 +54,6 @@ public class Multipass {
             try {
                 getUser(player).get().getAllGroups().forEach(g -> list.add(g.getName()));
             } catch (Exception ignore) {
-                ///
             }
         }
         return list;
@@ -78,7 +77,6 @@ public class Multipass {
                 }
             });
         } catch (Exception ignore) {
-            //
         }
         return list;
     }
@@ -111,7 +109,6 @@ public class Multipass {
                 }
             });
         } catch (Exception ignore) {
-            //
         }
         return list;
     }
@@ -175,7 +172,6 @@ public class Multipass {
             if (user.inGroup(group)) return true;
             return MultipassPlugin.getCfg().enableWorldSupport ? user.inGroup(player.getLevel().getName(), group) : false;
         } catch (Exception ignore) {
-            //
         }
         return false;
     }
@@ -215,7 +211,6 @@ public class Multipass {
             if (user == null) return false;
             for (String group : user.getGroupList()) if (Groups.isDefault(group)) return true;
         } catch (Exception ignore) {
-            //
         }
         return false;
     }
@@ -275,7 +270,6 @@ public class Multipass {
             }
 
         } catch (Exception ignore) {
-            //
         }
         return false;
     }
