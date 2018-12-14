@@ -152,8 +152,8 @@ public class Multipass {
      * @return
      */
     public static String getSuffix(String player) {
-        List<String> prefixes = getSuffixes(player);
-        return prefixes.isEmpty() ? "" : prefixes.get(0);
+        List<String> suffixes = getSuffixes(player);
+        return suffixes.isEmpty() ? "" : suffixes.get(0);
     }
 
     /**
