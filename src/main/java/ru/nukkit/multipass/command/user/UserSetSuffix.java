@@ -32,7 +32,7 @@ public class UserSetSuffix extends Cmd {
     public boolean execute(CommandSender sender, Player player, String[] args) {
         String userName = args[0];
         String suffix = Util.join(args, 2);
-        Users.setPrefix(userName, suffix);
+        Users.setSuffix(userName, suffix);
         Util.informMessage(userName, Message.USER_SUFFIX_OK_INFORM, suffix);
         return Message.USER_SUFFIX_OK.print(sender, userName, suffix);
     }
