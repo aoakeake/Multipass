@@ -1,0 +1,4 @@
+<factorypath>
+    <factorypathentry kind="VARJAR" id="M2_REPO/cn/nukkit/nukkit/1.0-SNAPSHOT/nukkit-1.0-SNAPSHOT.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/ru/nukkit/dblib/DbLib/1.0-SNAPSHOT/DbLib-1.0-SNAPSHOT.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>
